@@ -5,5 +5,8 @@ public class Main {
     Persona Matias=new Persona();
     Matias.setEdad(19);
     Matias.saludar();
+    Personal Laura=new Personal();
+    Laura.setSalario(3000);
+
     }
 }

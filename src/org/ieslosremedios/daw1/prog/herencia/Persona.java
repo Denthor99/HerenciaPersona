@@ -19,6 +19,9 @@ public class Persona {
         this.nif=nif;
         this.nss=nss;
     }
+    public void saludar(){
+        System.out.println("Hola me llamo "+nombre+", tengo "+edad);
+    }
 
     public String getNombre(){
         return nombre;
@@ -59,8 +62,4 @@ public class Persona {
     public void setDomicilio(Domicilio domicilio) {
         this.domicilio = domicilio;
     }
-    public void saludar(){
-        System.out.println("Hola me llamo "+nombre+", tengo "+edad);
-    }
-
 }

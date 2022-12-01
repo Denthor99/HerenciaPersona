@@ -7,14 +7,14 @@ public class Personal extends Persona{
     public Personal(){
 
     }
-    public Personal(String nombre, String apellido, Integer edad, String nif, Integer nss, Domicilio domicilio, String departamento, Integer salario){
-        this.nombre=nombre;
-        this.apellido=apellido;
-        this.edad=edad;
-        this.nif=nif;
-        this.nss=nss;
+    public Personal(String departamento, Integer salario){
         this.departamento = departamento;
         this.salario = salario;
+    }
+    public void Experto(){
+        if (salario>=3000){
+            System.out.println("Es un experto");
+        }
     }
     public String getDepartamento(){
         return departamento;
