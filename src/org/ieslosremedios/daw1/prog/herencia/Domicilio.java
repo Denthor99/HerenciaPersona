@@ -1,7 +1,7 @@
 package org.ieslosremedios.daw1.prog.herencia;
 
 public class Domicilio {
-    private String calle;
+    private static String calle="Salmo Imperito";//La ponemos en static para que todos los tipos de personas tengan la misma calle
     private String ciudad;
     private String provincia;
     private String codigoPostal;
@@ -9,6 +9,8 @@ public class Domicilio {
 
     public Domicilio(){
     }
+
+
     public Domicilio(String calle, String ciudad, String provincia, String codigoPostal, String pais){
         this.calle=calle;
         this.ciudad=ciudad;
@@ -17,7 +19,7 @@ public class Domicilio {
         this.pais=pais;
     }
 
-    public String getCalle() {
+    public static String getCalle() {
         return calle;
     }
 

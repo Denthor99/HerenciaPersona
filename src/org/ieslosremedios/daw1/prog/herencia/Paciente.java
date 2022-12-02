@@ -8,9 +8,14 @@ public class Paciente extends Persona{
 
     }
 
-    public Paciente(String Cita, String medicoAsignado){
+    public Paciente(String nombre, String apellido, Integer edad, String nif, Integer nss, String Cita, String medicoAsignado){
+        super();
         this.Cita=Cita;
         this.medicoAsignado=medicoAsignado;
+    }
+    public void mostrarDatosPaciente(){
+        System.out.println("Cita del Paciente: "+Cita);
+        System.out.println("Medico Asignado al Paciente: "+medicoAsignado);
     }
     public String getCita(){
         return Cita;

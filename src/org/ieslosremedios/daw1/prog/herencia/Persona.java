@@ -1,7 +1,7 @@
 package org.ieslosremedios.daw1.prog.herencia;
 
 public class Persona {
-    protected String nombre="Roberto";
+    protected String nombre;
     protected String apellido;
     protected Integer edad;
     protected String nif;
@@ -19,8 +19,13 @@ public class Persona {
         this.nif=nif;
         this.nss=nss;
     }
-    public void saludar(){
-        System.out.println("Hola me llamo "+nombre+", tengo "+edad);
+    public void mostrarDatos(){
+        System.out.println("Nombre: "+nombre);
+        System.out.println("Apellido: "+apellido);
+        System.out.println("Edad: "+edad);
+        System.out.println("NIF: "+nif);
+        System.out.println("NSS: "+nss);
+        System.out.println("Domicilio: "+ Domicilio.getCalle());
     }
 
     public String getNombre(){
